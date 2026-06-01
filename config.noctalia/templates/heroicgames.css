@@ -1,0 +1,55 @@
+/* Noctalia Theme Template for Heroic Games Launcher
+ * Automatically generates theme based on your Noctalia color scheme
+ */
+
+body.noctalia {
+  /* Base background colors */
+  --background: {{colors.surface.default.hex}};
+  --background-darker: {{colors.surface.default.hex | darken 8}};
+  --background-secondary: {{colors.surface_variant.default.hex}};
+  --background-lighter: {{colors.surface_container.default.hex}};
+  
+  /* Text colors */
+  --text-default: {{colors.on_surface.default.hex}};
+  --text-secondary: {{colors.on_surface_variant.default.hex}};
+  --text-tertiary: {{colors.surface.default.hex}};
+  
+  /* Accent & Interactive colors */
+  --accent: {{colors.primary.default.hex}};
+  --accent-overlay: var(--accent);
+  --navbar-accent: {{colors.secondary.default.hex}};
+  --navbar-active: var(--accent);
+  --navbar-active-background: {{colors.surface_variant.default.hex}};
+  
+  /* Status colors */
+  --success: {{colors.tertiary.default.hex}};
+  --success-hover: {{colors.tertiary_container.default.hex}};
+  --primary: {{colors.error.default.hex}};
+  --primary-hover: {{colors.error_container.default.hex}};
+  --danger: {{colors.error.default.hex}};
+  --danger-hover: {{colors.error_container.default.hex}};
+  --cancel-button: {{colors.secondary.default.hex}};
+  
+  /* UI element colors */
+  --input-background: {{colors.surface_variant.default.hex}};
+  --modal-background: {{colors.surface.default.hex}};
+  --modal-border: var(--modal-background);
+  --icons-background: {{colors.surface_container.default.hex}};
+  --action-icon: {{colors.on_surface_variant.default.hex}};
+  --action-icon-hover: var(--text-default);
+  --action-icon-active: var(--accent);
+  --icon-disabled: {{colors.outline.default.hex}};
+  --neutral-06: var(--text-default);
+  
+  /* Anticheat status colors */
+  --anticheat-denied: var(--danger);
+  --anticheat-broken: {{colors.secondary.default.hex}};
+  --anticheat-running: var(--text-default);
+  --anticheat-supported: {{colors.tertiary.default.hex}};
+  --anticheat-planned: {{colors.primary.default.hex}};
+  
+  /* Required Heroic variables (mapped from above) */
+  --navbar-background: var(--background);
+  --body-background: var(--background-darker);
+  --current-background: var(--body-background);
+}

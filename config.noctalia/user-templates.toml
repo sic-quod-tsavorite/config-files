@@ -1,0 +1,16 @@
+[config]
+
+[templates]
+
+# User-defined templates
+# Add your custom templates below
+# Example:
+# [templates.myapp]
+# input_path = "~/.config/noctalia/templates/myapp.css"
+# output_path = "~/.config/myapp/theme.css"
+# post_hook = "myapp --reload-theme"
+
+[templates.heroicgames]
+input_path = "~/.config/noctalia/templates/heroicgames.css"
+output_path = "~/Documents/heroic-themes/noctalia.css"
+# post_hook = "notify-send 'Heroic' 'Theme updated' || true"
